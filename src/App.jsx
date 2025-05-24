@@ -2,21 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Persongreeting from './Persongreeting'
+import Counter from './Counter'
+import Specificdiv from './Specificdiv'
 
 function App() {
 
-  const [name, setName] = useState("");
+  
   return (
     <>
-      <div>
-        <label>
-          Enter your name: <br />
-        </label>
-      </div>
-      <div>
-        <input type="text" onChange={(e) => setName("Hello " + e.target.value + "!")} />
-        <p>{name}</p>
-      </div>
+      <Specificdiv/>
 
     </>
   )
